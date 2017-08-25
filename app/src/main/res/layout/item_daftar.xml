@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textSize="16sp"
+        android:textColor="#424242"/>
+    
+    <TextView
+        android:id="@+id/sekolah_text"
+        android:layout_alignStart="@id/name_text"
+        android:layout_alignLeft="@id/name_text"
+        android:layout_below="@id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/dash_sep"
+        android:layout_below="@id/name_text"
+        android:layout_toRightOf="@id/sekolah_text"
+        android:layout_toEndOf="@id/sekolah_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/dash"/>
+
+    <TextView
+        android:id="@+id/paket_text"
+        android:layout_below="@id/name_text"
+        android:layout_toRightOf="@id/dash_sep"
+        android:layout_toEndOf="@id/dash_sep"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
